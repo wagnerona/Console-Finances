@@ -93,6 +93,7 @@ console.table(Finances);
 // Display total number of months/values in array
 const totalMonths = Finances.length;
 console.log("Total months:", totalMonths);
+document.getElementById("totalMonths").innerHTML = totalMonths; // You will see these throughout its just a link to the html file so it can be displayed there
 
 //Calculate net profit in array
 let netProfit = 0;
@@ -101,6 +102,7 @@ for (let i = 0; i < Finances.length; i++) {
   // We could also do netProfit =+ finances[i][1] (sum of finances second element in array)
 }
 console.log("Net profit is:", netProfit);
+document.getElementById("netProfit").innerHTML = netProfit;
 
 // The average change in profit and losses over the entire period
 let totalChange = 0;
@@ -109,6 +111,7 @@ for (let i = 1; i < Finances.length; i++) {
 }
 const averageChange = totalChange / (Finances.length - 1); //after we have the totalChange we divide by the total array amount -1 since we started at index 1 (i = 1)
 console.log("Average change in profits/loss:", averageChange);
+document.getElementById("averageChange").innerHTML = averageChange;
 
 // Greatest increase in profits
 let maxProfit = -Infinity; // Create a variable to keep track of max profit, -Infinity sets to max min value in JS and it will help define greatest increase
@@ -121,6 +124,8 @@ for (let i = 1; i < Finances.length; i++) {
   }
 }
 console.log("Greatest increase in profits:", maxProfit, "in", maxProfitMonth);
+document.getElementById("maxProfit").innerHTML =
+  maxProfit + " in " + maxProfitMonth;
 
 // Greatest decrease in profits
 let maxLoss = Infinity; // Similar to greatest increase, Initialize but with highest positive value in JS.
@@ -133,3 +138,4 @@ for (let i = 1; i < Finances.length; i++) {
   }
 }
 console.log("Greatest decrease in losses:", maxLoss, "in", maxLossMonth);
+document.getElementById("maxLoss").innerHTML = maxLoss + " in " + maxLossMonth;
