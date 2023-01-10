@@ -46,7 +46,11 @@ When you open the console you will be able to see the resulting analysis. I have
 
 ### Deployed website:
 
+https://wagnerona.github.io/Console-Finances/
+
 ### Github repo:
+
+https://github.com/wagnerona/Console-Finances
 
 ## Credits
 
