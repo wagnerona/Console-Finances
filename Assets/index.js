@@ -96,6 +96,9 @@ let poundsGB = Intl.NumberFormat("en-GB", {
   currency: "GBP",
 });
 
+console.log("Financial Analysis"); // Creates title for console
+console.log("-------------------");
+
 // Display total number of months/values in array
 const totalMonths = Finances.length;
 console.log("Total months:", totalMonths, "months");
