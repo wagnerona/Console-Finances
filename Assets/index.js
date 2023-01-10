@@ -120,7 +120,7 @@ for (let i = 1; i < Finances.length; i++) {
 }
 
 let averageChange = totalChange / (Finances.length - 1); //after we have the totalChange we divide by the total array amount -1 since we started at index 1 (i = 1)
-averageChange = averageChange.toFixed(2); // .toFixed changes the value for two decimal places adds currency with £
+averageChange = averageChange.toFixed(2); // .toFixed changes the value for two decimal places
 console.log("Average change in profits/loss:", "£", averageChange);
 document.getElementById("averageChange").innerHTML =
   poundsGB.format(averageChange);
